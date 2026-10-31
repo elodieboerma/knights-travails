@@ -9,25 +9,25 @@ function calcSquares([x,y]) {
                 possibleMoves.push([x+1,y+2]);
     }
     if (x+2 > -1 && x+2 < 8 && y+1 > -1 && y+1 < 8) {
-                possibleMoves.push([x+1,y+2]);
+                possibleMoves.push([x+2,y+1]);
     }
     if (x+2 > -1 && x+2 < 8 && y-1 > -1 && y-1 < 8) {
-                possibleMoves.push([x+1,y+2]);
+                possibleMoves.push([x+2,y-1]);
     }
     if (x+1 > -1 && x+1 < 8 && y-2 > -1 && y-2 < 8) {
-                possibleMoves.push([x+1,y+2]);
+                possibleMoves.push([x+1,y-2]);
     }
     if (x-1 > -1 && x-1 < 8 && y-2 > -1 && y-2 < 8) {
-                possibleMoves.push([x+1,y+2]);
+                possibleMoves.push([x-1,y-2]);
     }
     if (x-2 > -1 && x-2 < 8 && y-1 > -1 && y-1 < 8) {
-                possibleMoves.push([x+1,y+2]);
+                possibleMoves.push([x-2,y-1]);
     }
     if (x-2 > -1 && x-2 < 8 && y+1 > -1 && y+1 < 8) {
-                possibleMoves.push([x+1,y+2]);
+                possibleMoves.push([x-2,y+1]);
     }
     if (x-1 > -1 && x-1 < 8 && y+2 > -1 && y+2 < 8) {
-                possibleMoves.push([x+1,y+2]);
+                possibleMoves.push([x-1,y+2]);
     }
     return possibleMoves;
 }
