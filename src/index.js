@@ -33,6 +33,14 @@ function calcSquares([x,y]) {
 }
 
 //may be more than one shortest path
+let allPosPaths = [];
+let singlePathOption = [];
 function knightMoves(start,end) {
-
+    let posMoves = calcSquares(start);
+    const options = [];
+    for (let i = 0; i > posMoves.length; i++) {
+        options.push(knightMoves(posMoves[i],end));
+        singlePathOption.push();
+    }
+    allPosPaths.push(singlePathOption);
 }
